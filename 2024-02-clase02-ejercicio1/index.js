@@ -10,8 +10,42 @@ let numeroMinimo=10;
 let numeroMaximo=1;
 
 do{
+    let nota; //declaro antes del do (let es de bloque)
+    let notaValida=true
     //lo que repito
-    let nota = parseInt(prompt("Ingrese una nota del 1 al 10"))
+    do {
+        nota = parseInt(prompt("Ingrese una nota del 1 al 10"))
+
+    //OPCIÓ 1 DE VALIDACIÓN IF
+
+    if(isNaN(nota)){
+        alert ("La nota ingresada debe ser un número");
+        notaValida=false;
+    }
+
+    else if(nota<1){
+        alert ("La nota ingresada debe ser mayor a 1");
+        notaValida=false;
+    }
+
+    else if(nota>10){
+        alert ("La nota ingresada debe ser menos a 10");
+        notaValida=false;
+    }
+
+
+
+    } while( !notaValida); //o puedo ponerlo ((nota<1)||(nota>10)||isNan(nota))
+    
+// VER QUE ME ERROJA EL PROMPT, PARSEINT, PARSEFLOAT PARA SABER QUE VALIDAR Y QUE NO
+
+        //esto va a devolver
+        //numero entre 1 y 10
+        //numero mayor a 10
+        //mayor menor a 1
+        //NaN
+
+//NO ENTRA EL NULL YA QUE SOLO ENTRA EN UN PROMPT NO EN UN PARSEINT
 
 //Si entro al blucle pregunto lo siguiente
 
