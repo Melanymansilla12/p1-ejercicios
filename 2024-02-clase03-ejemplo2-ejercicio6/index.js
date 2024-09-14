@@ -1,5 +1,5 @@
 //variables globales
-let numero1, numero2,suma;
+let numero1, numero2,suma,resta,division,multiplicacion;
 /**
  * Funcion que atiende al click del primer numero
 */
@@ -27,6 +27,18 @@ function sumar(){
     suma=numero1 + numero2;
 }
 
+function restar(){
+    resta=numero1 - numero2;
+}
+
+function multiplicar(){
+    multiplicacion=numero1 * numero2;
+}
+
+function dividir (){
+    division=numero1 / numero2;
+}
+
 /**
  * Funcion que muestra el resultado de la suma
 */
@@ -46,7 +58,7 @@ function resultado(){
  */
 
 
-function validarNumero(msg=""){ //si no quiero nada aparecera el prompt vacio
+function validarNumero(msg=""){ //si no quiero nada aparecera el prompt vacio a que un UNDEFINED
     let numero;
         do{
         numero=parseInt(prompt(msg)); //ingrese .. pasa a ser el mensaje y el msg al prompt
@@ -61,3 +73,4 @@ function validarNumero(msg=""){ //si no quiero nada aparecera el prompt vacio
 
         return numero; //si pongo el return solo devuelve UNDEFINED (Ej return "jose";)
 }
+
