@@ -1,7 +1,10 @@
+ //variable para almacenar datos del alumno
+ let alumno;
+ 
  //varable para almacenar los datos de la materia
 let materias = [], notas = [];
 //pedir datos del alumno
-const alumno=validarString("ingrese su nombre del alumno");
+/*const alumno=validarString("ingrese su nombre del alumno");
 
 do{
     //booleano para validar
@@ -14,5 +17,5 @@ do{
  
     notas.push (nota);
 
-}while (confirm("¿otra materia y nota a cargar?")); //si dice que si se vuelve a ejecutar
+}while (confirm("¿otra materia y nota a cargar?")); //si dice que si se vuelve a ejecutar*/
 
